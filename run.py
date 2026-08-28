@@ -1,0 +1,12 @@
+import os
+import sys
+
+# Insere a raiz do projeto no caminho de importação do Python
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+from app import create_app
+
+app = create_app()
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)

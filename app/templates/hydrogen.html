@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-4 py-10 space-y-12">
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h1 class="text-3xl font-extrabold text-slate-900">O que é Hidrogênio Verde?</h1>
+        <p class="text-slate-600">Entenda a tecnologia da eletrólise da água, o uso de fontes sustentáveis como o bioetanol e o funcionamento dos ônibus a célula a combustível.</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-xl font-bold text-slate-800 mb-6 text-center">Cadeia Energética Proposta</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 text-center text-xs font-semibold">
+            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">BIOETANOL</div>
+            <div class="self-center text-slate-400">→</div>
+            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">GERAÇÃO DE ENERGIA</div>
+            <div class="self-center text-slate-400">→</div>
+            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">ELETRÓLISE DA ÁGUA</div>
+            <div class="self-center text-slate-400">→</div>
+            <div class="p-3 bg-brand-green text-white rounded-lg">ÔNIBUS HIDROVBUS</div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-4">
+            <h2 class="text-xl font-bold text-slate-800">O Processo de Eletrólise</h2>
+            <div class="p-3 bg-slate-900 text-brand-yellow font-mono text-center rounded-lg text-lg">
+                2H₂O → 2H₂ + O₂
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                A eletrólise utiliza corrente elétrica para separar a molécula de água em hidrogênio e oxigênio. Para ser classificado como <strong>Hidrogênio Verde (ou de baixo carbono)</strong>, a eletricidade consumida deve vir de fontes renováveis.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-4">
+            <h2 class="text-xl font-bold text-slate-800">Uso Responsável do Bioetanol</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                O bioetanol pode ser utilizado na reformagem para produção de H₂ ou para geração de eletricidade renovável. 
+            </p>
+            <p class="text-xs text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-200">
+                <strong>Nota Técnica:</strong> O bioetanol apresenta pegada ambiental reduzida, mas suas emissões dependem da eficiência do ciclo de vida, transporte e métodos de cultivo. Os parâmetros técnicos exatos do projeto serão atualizados pelos especialistas técnicos.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">Comparativo de Matrizes de Transporte</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-600">
+                <thead class="bg-slate-100 text-slate-800 uppercase text-[10px]">
+                    <tr>
+                        <th class="p-3">Tecnologia</th>
+                        <th class="p-3">Emissão Local</th>
+                        <th class="p-3">Tempo de Abastecimento</th>
+                        <th class="p-3">Autonomia</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                    <tr>
+                        <td class="p-3 font-bold">Diesel</td>
+                        <td class="p-3 text-red-600">Alta (CO₂, MP, NOx)</td>
+                        <td class="p-3">5 - 10 min</td>
+                        <td class="p-3">Elevada</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-bold">Bateria Elétrica</td>
+                        <td class="p-3 text-emerald-600">Zero</td>
+                        <td class="p-3 text-amber-600">3 a 8 horas</td>
+                        <td class="p-3">Moderada</td>
+                    </tr>
+                    <tr class="bg-emerald-50">
+                        <td class="p-3 font-bold text-brand-green">Hidrogênio (H₂)</td>
+                        <td class="p-3 text-emerald-600 font-bold">Zero (Apenas vapor d'água)</td>
+                        <td class="p-3 font-bold text-emerald-600">10 - 15 min</td>
+                        <td class="p-3 font-bold">Elevada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
